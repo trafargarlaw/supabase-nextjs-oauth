@@ -9,20 +9,17 @@ This is a boilerplate project that sets up a Next.js app with Tailwind CSS, Supa
 
 ## Getting started
 1. Clone this repository
-git clone https://github.com/<your-username>/nextjs-tailwind-supabase-oauth-boilerplate
 
-Copy code
+
 2. Install the dependencies
-npm install
+```npm install```
 
-Copy code
 3. Create a new file named `.env.local` in the root of the project.
 4. Fill the `.env.template` with the necessary environment variables.
 5. Rename `.env.template` to `.env.local` or `.env.development` or `.env.production` depending on the environment you want to use.
 6. Start the development server
 npm run dev
 
-Copy code
 7. Open `http://localhost:3000` in your browser
 
 ## OAuth setup
@@ -37,10 +34,8 @@ This project is ready for deployment on Vercel or any other platform that suppor
 - [Next.js](https://nextjs.org/) - A framework for building server-rendered React applications.
 - [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs.
 - [Supabase](https://supabase.io/) - An open-source Firebase alternative.
-- [OAuth](https://oauth.net/) - An open standard for authorization.
 
 ## Acknowledgments
 - [Next.js documentation](https://nextjs.org/docs)
 - [Tailwind CSS documentation](https://tailwindcss.com/docs)
 - [Supabase documentation](https://docs.supabase.io/)
-- [OAuth documentation](https://oauth.net/core/2.0/)
