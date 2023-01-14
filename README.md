@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js + Tailwind CSS + Supabase + OAuth Boilerplate
 
-## Getting Started
+This is a boilerplate project that sets up a Next.js app with Tailwind CSS, Supabase, and OAuth authentication.
 
-First, run the development server:
+## Prerequisites
+- Node.js version 14 or higher
+- A [Supabase project](https://supabase.com/docs/guides/getting-started/tutorials/with-nextjs#create-a-project) and OAuth app set up
+- A provider enabled in your Supabase project ( discord in this project )
 
-```bash
+## Getting started
+1. Clone this repository
+git clone https://github.com/<your-username>/nextjs-tailwind-supabase-oauth-boilerplate
+
+Copy code
+2. Install the dependencies
+npm install
+
+Copy code
+3. Create a new file named `.env.local` in the root of the project.
+4. Fill the `.env.template` with the necessary environment variables.
+5. Rename `.env.template` to `.env.local` or `.env.development` or `.env.production` depending on the environment you want to use.
+6. Start the development server
 npm run dev
-# or
-yarn dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Copy code
+7. Open `http://localhost:3000` in your browser
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## OAuth setup
+1. Go to your OAuth provider and create a new application.
+2. Take note of the `client_id` and `client_secret`
+3. In your Supabase project, enable the provider you just created.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Deployment
+This project is ready for deployment on Vercel or any other platform that supports Node.js.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Built With
+- [Next.js](https://nextjs.org/) - A framework for building server-rendered React applications.
+- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs.
+- [Supabase](https://supabase.io/) - An open-source Firebase alternative.
+- [OAuth](https://oauth.net/) - An open standard for authorization.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Acknowledgments
+- [Next.js documentation](https://nextjs.org/docs)
+- [Tailwind CSS documentation](https://tailwindcss.com/docs)
+- [Supabase documentation](https://docs.supabase.io/)
+- [OAuth documentation](https://oauth.net/core/2.0/)
